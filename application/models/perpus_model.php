@@ -164,7 +164,7 @@ class Perpus_model extends CI_model
 
 	public function get_data_favorite()
 	{
-		$sql = "SELECT buku.title, count(*) as jumlah FROM laporan, buku WHERE laporan.id_buku = buku.id_buku Group BY laporan.id_buku LIMIT 10";
+		$sql = "SELECT buku.title, count(*) as jumlah FROM laporan, buku WHERE laporan.id_buku = buku.id_buku Group BY laporan.id_buku ORDER BY jumlah DESC LIMIT 10";
 		$hasil = $this->db->query($sql);
 		return $hasil->result();
 	}
@@ -197,8 +197,29 @@ class Perpus_model extends CI_model
 		return $result->row()->id_laporan;
 	}
 
+	public function get_count_denda()
+	{
+		$sql = "SELECT SUM(total_denda) as total_denda from laporan";
+		$result = $this->db->query($sql);
+		return $result->row()->total_denda;
+	}
+
+	public function get_count_buku_dipinjam()
+	{
+		$sql = "SELECT count(*) as dipinjam from laporan WHERE status = 'Dipinjam'";
+		$result = $this->db->query($sql);
+		return $result->row()->dipinjam;
+	}
+
+	public function get_sum_buku()
+	{
+		$sql = "SELECT SUM(jml) as jumlah_buku from buku";
+		$result = $this->db->query($sql);
+		return $result->row()->jumlah_buku;
+	}
+
 	// public function get_jml_buku($id_buku)
 	// {
-		// $sql = "SELECT jml from buku where id_buku = "
+	// 	$sql = "SELECT sum(jml) from buku where
 	// }
 }

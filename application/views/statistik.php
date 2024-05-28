@@ -5,23 +5,97 @@
     </div>
     <div class="row col-md-4">
 
-        <div class="col-md-12 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
+    <div class="col-md-12 mb-4 mt-1">
+            <div class="card border-left-primary shadow h-60 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                <a href="http://localhost/sip/admin/data_user"><div>Jumlah buku yang di pinam</div></a></div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">43</div>
+                                <!-- <a href="http://localhost/sip/admin/data_user"> -->
+                                    <div>Banyaknya Buku</div>
+                                <!-- </a> -->
+                            </div>
+                            <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">43</div> -->
                         </div>
-                        <div class="col-auto">
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $jumlah_buku+$dipinjam ?> Buah</div>
+
+                        <!-- <div class="col-auto">
                             <i class="fas fa-journal-whills fa-2x text-gray-500"></i>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
+
+    <div class="col-md-12 mb-4">
+            <div class="card border-left-primary shadow h-60 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                <!-- <a href="http://localhost/sip/admin/data_user"> -->
+                                    <div>Banyaknya buku yang tersedia</div>
+                                <!-- </a> -->
+                            </div>
+                            <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">43</div> -->
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $jumlah_buku?> Buah</div>
+
+                        <!-- <div class="col-auto">
+                            <i class="fas fa-journal-whills fa-2x text-gray-500"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="col-md-12 mb-4">
+            <div class="card border-left-primary shadow h-60 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                <!-- <a href="http://localhost/sip/admin/data_user"> -->
+                                    <div>Banyaknya buku yang dipinjam</div>
+                                <!-- </a> -->
+                            </div>
+                            <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">43</div> -->
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $dipinjam?> Buku</div>
+
+                        <!-- <div class="col-auto">
+                            <i class="fas fa-journal-whills fa-2x text-gray-500"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 mb-4">
+            <div class="card border-left-primary shadow h-60 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                <!-- <a href="http://localhost/sip/admin/data_user"> -->
+                                    <div>Total uang denda </div>
+                                <!-- </a> -->
+                            </div>
+                            <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">43</div> -->
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?php echo $total_denda?></div>
+
+                        <!-- <div class="col-auto">
+                            <i class="fas fa-journal-whills fa-2x text-gray-500"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="col-md-12 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -36,7 +110,10 @@
                     </div>
                 </div>
             </div>
-        </div><div class="col-md-12 mb-4">
+        </div> -->
+
+
+        <!-- <div class="col-md-12 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -51,7 +128,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 </div>
   </div>
 </div>

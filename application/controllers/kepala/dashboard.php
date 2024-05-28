@@ -18,7 +18,10 @@
         
         public function index()
         {
+            $data2['total_denda'] = $this->perpus_model->get_count_denda();
             $data2['favorite'] = $this->perpus_model->get_data_favorite();
+            $data2['dipinjam'] = $this->perpus_model->get_count_buku_dipinjam();
+            $data2['jumlah_buku'] = $this->perpus_model->get_sum_buku();
             $this->load->view('templates_kepala/header');
             $this->load->view('templates_kepala/sidebar');
             $this->load->view('kepala/dashboard');

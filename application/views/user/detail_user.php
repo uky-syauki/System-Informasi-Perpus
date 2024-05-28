@@ -18,7 +18,7 @@
 							<td><strong><?php echo $dt->id_user ?></strong></td>
 						</tr>
 						<tr>
-							<td>Nomor Register Perpus</td>
+							<td>Nomor Registrasi Perpus</td>
 							<td><strong><?php echo $dt->nrp ?></strong></td>
 						</tr>
 						<tr>

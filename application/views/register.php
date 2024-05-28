@@ -14,7 +14,7 @@
                             <form method="post" action="<?php echo base_url('register/index') ?>" class="user">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="NRP Anda" name="nrp">
+                                        placeholder="Nomor Registrasi Perpustakaan" name="nrp">
 
                                 <?php echo form_error('nrp', '<div class="text-danger small ml-2">', '</div>')?>
                                 </div>

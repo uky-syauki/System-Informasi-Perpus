@@ -28,7 +28,10 @@ class Dashboard extends CI_Controller
 		$data['count_buku'] = $this->perpus_model->get_count_buku();
 		$data['count_rak'] = $this->perpus_model->get_count_rak();
 		$data['count_laporan'] = $this->perpus_model->get_count_laporan();
+		$data2['total_denda'] = $this->perpus_model->get_count_denda();
 		$data2['favorite'] = $this->perpus_model->get_data_favorite();
+		$data2['dipinjam'] = $this->perpus_model->get_count_buku_dipinjam();
+		$data2['jumlah_buku'] = $this->perpus_model->get_sum_buku();
 		$this->load->view('templates_admin/header');
 		$this->load->view('templates_admin/sidebar');
 		$this->load->view('admin/dashboard', $data);

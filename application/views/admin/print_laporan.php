@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>SIP</title>
+    
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+
     <style>
         .line-title{
             border: 0;
@@ -12,7 +15,7 @@
 </head>
 <body>
 
-    <img src="<?php echo base_url()?>assets/img/logo.png" style="position: absolute; width: 60px; height: auto;">
+    <img src="<?php echo base_url()?>assets/img/logo1.png" style="position: absolute; width: 60px; height: auto;">
 
     <table style="width: 100%">
         <tr>
@@ -72,9 +75,9 @@
                     </tr>
                 <?php endforeach;  ?>
             </table>
-
     <script type="text/javascript">
-        window.print();
+        window.onload = window.print();
     </script>
+
 </body>
 </html>

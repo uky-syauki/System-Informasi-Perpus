@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <img src="<?php echo base_url()?>assets/img/logo.png" style="position: absolute; width: 60px; height: auto;">
+    <img src="<?php echo base_url()?>assets/img/logo1.png" style="position: absolute; width: 60px; height: auto;">
 
     <table style="width: 100%">
         <tr>

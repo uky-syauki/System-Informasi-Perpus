@@ -11,7 +11,7 @@
 			</div>
 
 			<div class="for-group">
-				<label>Nomor Register Perpustakaan</label>
+				<label>Nomor Registrasi Perpustakaan</label>
 				<input type="text" name="nrp" class="form-control" value="<?php echo $usr->nrp ?>">
 			</div>
 

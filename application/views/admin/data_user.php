@@ -7,7 +7,7 @@
         <table class="table table-striped table-bordered">
             <tr>
                 <th>No</th>
-                <th>Nomor Register Perpustakaan</th>
+                <th>Nomor Registrasi Perpustakaan</th>
                 <th>Pas Foto</th>
                 <th>Nama</th>
                 <th>Username</th>

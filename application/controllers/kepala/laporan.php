@@ -13,7 +13,7 @@ class Laporan extends CI_Controller
             $this->load->view('kepala/filter_laporan');
             $this->load->view('templates_kepala/footer');
         } else {
-            $laporan = $this->db->query("SELECT * FROM laporan tr, user mb, buku cs WHERE tr.id_user=mb.id_user AND tr.id_buku=cs.id_buku AND date(tgl_pinjam) >= '$dari' AND date(tgl_kembali) <='$sampai' ")->result();
+            $laporan = $this->db->query("SELECT * FROM laporan tr, user mb, buku cs WHERE tr.id_user=mb.id_user AND tr.id_buku=cs.id_buku AND date(tr.tgl_pinjam) >= '$dari' AND date(tr.tgl_pinjam) <='$sampai' ")->result();
 
             // Mengambil data untuk grafik
             $jumlahPeminjaman = 0;
@@ -43,7 +43,7 @@ class Laporan extends CI_Controller
         $sampai = $this->input->get('sampai');
         $data['title'] = "Print Laporan Transaksi";
 
-        $laporan = $this->db->query("SELECT * FROM laporan tr, user mb, buku cs WHERE tr.id_user=mb.id_user AND tr.id_buku=cs.id_buku AND date(tgl_pinjam) >= '$dari' AND date(tgl_kembali) <='$sampai' ")->result();
+        $laporan = $this->db->query("SELECT * FROM laporan tr, user mb, buku cs WHERE tr.id_user=mb.id_user AND tr.id_buku=cs.id_buku AND date(tr.tgl_pinjam) >= '$dari' AND date(tr.tgl_pinjam) <='$sampai' ")->result();
 
         // Mengambil data untuk grafik
         $jumlahPeminjaman = 0;

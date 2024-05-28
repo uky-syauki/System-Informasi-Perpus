@@ -17,7 +17,7 @@
 							<td><strong><?php echo $dt->id_user ?></strong></td>
 						</tr>
 						<tr>
-							<td>Nomor Register Perpustakaan</td>
+							<td>Nomor Registrasi Perpustakaan</td>
 							<td><strong><?php echo $dt->nrp ?></strong></td>
 						</tr>
 						<tr>
