@@ -6,9 +6,9 @@
 	<table class="table table-bordered">
 	<tr>
 		<th>No</th>
-    <th>ID User</th>
-    <th>ID Buku</th>
-		<th>Tanggal pinjam</th>
+    <th>Nama Pengguna</th>
+    <th>Judul Buku</th>
+		<th>Tanggal Pinjam</th>
 		<th>Tanggal Kembali</th>
     <th>Status</th>
 		<th colspan="3">Aksi</th>
@@ -20,8 +20,8 @@
 	foreach ($laporan as $pjm) : ?>
 		<tr>
 			<td><?php echo $no++ ?></td>
-      <td><?php echo $pjm->id_user ?></td>
-			<td>BK-00<?php echo $pjm->id_buku ?></td>
+      <td><?php echo $pjm->username ?></td>
+			<td><?php echo $pjm->title ?></td>
 			<td><?php echo $pjm->tgl_pinjam ?></td>
 			<td><?php echo $pjm->tgl_kembali ?></td>
 			<td><?php echo anchor('admin/data_pinjam/update_pinjam/' .$pjm->id_laporan, '<div class="btn btn-info btn-sm"><i class="fas fa-edit"></i></div>') ?></td>

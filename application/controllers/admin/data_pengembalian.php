@@ -4,7 +4,8 @@ class Data_pengembalian extends CI_Controller{
 	public function index()
 	{
 		//memanggil data
-		$data['laporan'] = $this->perpus_model->get_data('laporan')->result();
+		// $data['laporan'] = $this->perpus_model->get_data('laporan')->result();
+		$data['laporan'] = $this->perpus_model->get_data_laporan();
 		$data['buku'] = $this->perpus_model->get_data('buku')->result();
 		$data['tgl_pinjam'] = date('Y-m-d');
 		$data['tgl_kembali'] = date('Y-m-d', strtotime('+7 day', strtotime($data['tgl_pinjam'])));

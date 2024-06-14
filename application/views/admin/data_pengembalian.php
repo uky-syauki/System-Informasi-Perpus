@@ -6,8 +6,8 @@
 	<table class="table table-bordered">
 	<tr>
 		<th>No</th>
-    <th>ID User</th>
-    <th>ID Buku</th>
+    <th>Nama Pengguna</th>
+    <th>Judul Buku</th>
     <th>Tanggal pinjam</th>
     <th>Tanggal Kembali</th>
     <th>Tanggal Pengembalian</th>
@@ -23,8 +23,8 @@
   foreach ($laporan as $pjm) : ?>
     <tr>
       <td><?php echo $no++ ?></td>
-      <td><?php echo $pjm->id_user ?></td>
-      <td><?php echo $pjm->id_buku ?></td>
+      <td><?php echo $pjm->username ?></td>
+      <td><?php echo $pjm->title ?></td>
       <td><?php echo $pjm->tgl_pinjam ?></td>
       <td><?php echo $pjm->tgl_kembali ?></td>
       <td><?php echo $pjm->pengembalian ?></td>

@@ -218,6 +218,14 @@ class Perpus_model extends CI_model
 		return $result->row()->jumlah_buku;
 	}
 
+	public function get_data_laporan()
+	{
+		$sql = "SELECT * from laporan lp, buku bk, user ur WHERE lp.id_buku=bk.id_buku and lp.id_user=ur.id_user";
+		$result = $this->db->query($sql);
+		// echo $result;	
+		return $result->result();
+	}
+
 	// public function get_jml_buku($id_buku)
 	// {
 	// 	$sql = "SELECT sum(jml) from buku where

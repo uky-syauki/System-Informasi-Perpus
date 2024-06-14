@@ -29,7 +29,7 @@
 		{
 			$this->_rules();
 
-			if ($this->form_validation->run() == TRUE){
+			if ($this->form_validation->run() == FALSE){
 
 				$this->update_user($this->input->post('id_user'));
 			}else{
